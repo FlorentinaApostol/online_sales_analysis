@@ -22,4 +22,7 @@ for p in products:
 
 manager.display_all_products()
 print (f"Valoarea totala: {manager.calculate_total_value()} Ron")
+manager.remove_product("Mouse")
+
+
 
