@@ -25,5 +25,6 @@ cart.add_to_cart(products[2], quantity = 1)
 cart.add_to_cart(products[3], quantity = 1)
 cart.add_to_cart(products[4], quantity = 1)
 
+
 cart.display_cart()
 print(f"Valoarea totala de plata: {cart.calculate_total_cart()} RON")
