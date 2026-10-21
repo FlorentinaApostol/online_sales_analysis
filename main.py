@@ -1,11 +1,11 @@
 from product import Product
 from product_manager import ProductManager
+from cart import Cart
 
-# Creare instanta ProductManager
     
 
 if __name__ == "__main__":
-    manager = ProductManager()
+    manager = ProductManager() # Creare instanta ProductManager
 
     products = [
         Product("Laptop Gaming", 4200.0, 4),
@@ -24,5 +24,11 @@ manager.display_all_products()
 print (f"Valoarea totala: {manager.calculate_total_value()} Ron")
 manager.remove_product("Mouse")
 
+ # Creare instanta Cart
 
+cart = Cart()
+cart.add_to_cart(products[0], quantity = 1)
+cart.add_to_cart(products[3], quantity = 2)
 
+cart.display_cart()
+print(f"Valoarea totala de plata: {cart.calculate_total_cart()} RON")
